@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>Подборка: {{ collection.name }}</h1>
+    <a href="{{ url_for('collections') }}" class="btn btn-outline-secondary">
+        <i class="bi bi-arrow-left"></i> Назад к подборкам
+    </a>
+</div>
+
+{% if collection.books %}
+<div class="row">
+    {% for book in collection.books %}
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">{{ book.title }}</h5>
+                <p class="card-text">
+                    <strong>Автор:</strong> {{ book.author }}<br>
+                    <strong>Год:</strong> {{ book.year }}<br>
+                    <strong>Жанры:</strong> 
+                    {% for genre in book.genres %}
+                        <span class="badge bg-secondary">{{ genre.name }}</span>
+                    {% endfor %}
+                </p>
+            </div>
+            <div class="card-footer">
+                <a href="{{ url_for('book_detail', book_id=book.id) }}" class="btn btn-sm btn-outline-primary">
+                    <i class="bi bi-eye"></i> Просмотр
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<div class="text-center py-5">
+    <i class="bi bi-book" style="font-size: 4rem; color: #6c757d;"></i>
+    <h3 class="mt-3">В этой подборке пока нет книг</h3>
+    <p class="text-muted">Добавьте книги из страницы просмотра книги</p>
+</div>
+{% endif %}
+{% endblock %}
