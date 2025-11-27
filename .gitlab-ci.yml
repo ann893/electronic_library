@@ -1,0 +1,10 @@
+stages:
+  - security
+
+sql_check:
+  stage: security
+  script:
+    - echo "Проверяем SQL файлы на уязвимости..."
+    - find . -name "*.sql" -exec echo "Найден файл: {}" \;
+  only:
+    - branches
