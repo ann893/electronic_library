@@ -1,0 +1,4 @@
+Starting TeamCity Build Agent Launcher...
+Agent home directory is /home/kleymkovt/electronic_library/buildAgent
+[2025-11-04 12:16:31,828]   WARN -      jetbrains.buildServer.VCS - '[/home/kleymkovt/electronic_library/buildAgent/temp] hg version --quiet' command failed. 
+[2025-11-04 12:16:50,408]   WARN - ldServer.AGENT.PollingProtocol - The command "testLocal" {id = 2261} has been already executed, continue polling. 

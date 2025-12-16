@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  teamcity-server:
+    image: jetbrains/teamcity-server
+    container_name: teamcity-server
+    ports:
+      - "8111:8111"
+    volumes:
+      - teamcity_data:/data/teamcity_server/datadir
+      - teamcity_logs:/opt/teamcity/logs
+    restart: unless-stopped
+
+  teamcity-agent:
+    image: jetbrains/teamcity-agent
+    container_name: teamcity-agent
+    environment:
+      - SERVER_URL=http://teamcity-server:8111
+    volumes:
+      - teamcity_agent_vol:/data/teamcity_agent
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/kleymkovt/electronic_library:/home/kleymkovt/electronic_library
+    depends_on:
+      - teamcity-server
+    restart: unless-stopped
+
+volumes:
+  teamcity_data:
+  teamcity_logs:
+  teamcity_agent_vol:

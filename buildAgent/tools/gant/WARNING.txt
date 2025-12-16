@@ -1,0 +1,1 @@
+Custom org.codehaus.groovy.tools.RootLoader is used with fix for Java 9, see VCS history for details

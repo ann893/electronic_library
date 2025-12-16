@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>info-maven2-plugin</name>
+      <prefix>info2</prefix>
+      <artifactId>info-maven2-plugin</artifactId>
+    </plugin>
+    <plugin>
+      <name>info-maven3-plugin</name>
+      <prefix>info3</prefix>
+      <artifactId>info-maven3-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>

@@ -1,0 +1,370 @@
+[2025-11-04 12:15:45,884]   INFO -   jetbrains.buildServer.SERVER - Starting TeamCity agent
+[2025-11-04 12:15:45,886]   INFO - s.buildServer.agent.AgentMain2 - 
+
+
+
+
+
+
+[2025-11-04 12:15:45,886]   INFO - s.buildServer.agent.AgentMain2 - ===========================================================
+[2025-11-04 12:15:45,893]   INFO - s.buildServer.agent.AgentMain2 - TeamCity Build Agent 2025.07.3 (build 197398)
+[2025-11-04 12:15:45,899]   INFO - s.buildServer.agent.AgentMain2 - OS: Linux, version 6.14.0-34-generic, amd64, Current user: kleymkovt, Time zone: UTC
+[2025-11-04 12:15:45,899]   INFO - s.buildServer.agent.AgentMain2 - Java: 17.0.16, OpenJDK 64-Bit Server VM (17.0.16+8-Ubuntu-0ubuntu124.04.1, mixed mode, sharing), OpenJDK Runtime Environment (17.0.16+8-Ubuntu-0ubuntu124.04.1), Ubuntu; JVM parameters: -ea -XX:+DisableAttachMechanism --add-opens=java.base/java.lang=ALL-UNNAMED -XX:+IgnoreUnrecognizedVMOptions -Xmx384m -Dteamcity_logs=../logs/ -Dlog4j2.configurationFile=file:../conf/teamcity-agent-log4j2.xml
+[2025-11-04 12:15:45,900]   INFO - s.buildServer.agent.AgentMain2 - Agent home is "/home/kleymkovt/electronic_library/buildAgent"
+[2025-11-04 12:15:45,900]   INFO - s.buildServer.agent.AgentMain2 - Starting...
+[2025-11-04 12:15:46,809]   INFO -    jetbrains.buildServer.AGENT - Calculating CPU benchmark index...
+[2025-11-04 12:15:46,910]   INFO - dAgentConfigurationInitializer - Loading build agent configuration from /home/kleymkovt/electronic_library/buildAgent/conf/buildAgent.properties
+[2025-11-04 12:15:46,953]   INFO - s.buildServer.agent.AgentMain2 - Working dir: /home/kleymkovt/electronic_library/buildAgent/work
+[2025-11-04 12:15:46,953]   INFO - s.buildServer.agent.AgentMain2 - Temp dir: /home/kleymkovt/electronic_library/buildAgent/temp
+[2025-11-04 12:15:46,954]   INFO - rver.plugins.PluginManagerImpl - ===========================================================
+[2025-11-04 12:15:46,954]   INFO - rver.plugins.PluginManagerImpl - Plugins initialization started...
+[2025-11-04 12:15:46,954]   INFO - rver.plugins.PluginManagerImpl - Scanning plugins folders
+[2025-11-04 12:15:46,956]   INFO - .plugins.files.JarSearcherBase - Scanning plugin folder: /home/kleymkovt/electronic_library/buildAgent/plugins
+[2025-11-04 12:15:46,976]   INFO - .plugins.files.JarSearcherBase - Scanning plugin folder: /home/kleymkovt/electronic_library/buildAgent/tools
+[2025-11-04 12:15:46,982]   INFO - rver.plugins.PluginManagerImpl - Found 1 non bundled plugins: [amazonEC2]
+[2025-11-04 12:15:46,982]   INFO - rver.plugins.PluginManagerImpl - Found 0 bundled plugins: []
+[2025-11-04 12:15:46,984]   INFO - rver.plugins.PluginsCollection - Load shared classloader for 0 plugins []
+[2025-11-04 12:15:46,986]   INFO - rver.plugins.PluginsCollection - Load standalone classloaders for 1 plugins [amazonEC2]
+[2025-11-04 12:15:47,041]   INFO - rver.plugins.PluginManagerImpl - Plugins initialization completed (1 plugins loaded): [amazonEC2]
+[2025-11-04 12:15:47,041]   INFO - rver.plugins.PluginManagerImpl - ===========================================================
+[2025-11-04 12:15:47,042]   INFO -    jetbrains.buildServer.AGENT - Build Agent version: 197398, plugins signature: NA
+[2025-11-04 12:15:47,058]   INFO - dAgentConfigurationInitializer - Loading build agent configuration from /home/kleymkovt/electronic_library/buildAgent/conf/buildAgent.properties
+[2025-11-04 12:15:50,680]   INFO -    jetbrains.buildServer.AGENT - CPU benchmark index is set to 851
+[2025-11-04 12:15:55,099]   INFO - n.AmazonInstanceMetadataReader - Amazon is not available. Amazon EC2 integration is not active: Failed to connect to http://169.254.169.254/latest/api/token. Connection refused
+[2025-11-04 12:16:03,119]   INFO - n.AmazonInstanceMetadataReader - Amazon is not available. Amazon EC2 integration is not active: Failed to connect to http://169.254.169.254/latest/2016-04-19. Connection refused
+[2025-11-04 12:16:03,124]   INFO - ildServer.util.EventDispatcher - Event listener took 16s,059ms to complete. Method AgentLifeCycleListener.afterAgentConfigurationLoaded in listener jetbrains.buildServer.clouds.amazon.agent.AmazonProperties$1
+[2025-11-04 12:16:03,138]   INFO -    jetbrains.buildServer.AGENT - Start build agent
+[2025-11-04 12:16:03,159]   INFO -    jetbrains.buildServer.AGENT - Agent Web server started on port 9090
+[2025-11-04 12:16:03,160]   INFO -    jetbrains.buildServer.AGENT - Start probing plugins for the configuration parameters to store
+[2025-11-04 12:16:03,176]   INFO - .agent.impl.OsArchBitsDetector - Detecting via "getconf LONG_BIT", exit code: 0, output: 64
+[2025-11-04 12:16:03,176]   INFO - .agent.impl.OsArchBitsDetector - "teamcity.agent.os.arch.bits" detected as "64"
+[2025-11-04 12:16:03,176]   INFO -    jetbrains.buildServer.AGENT - Stop probing plugins for the configuration parameters to store
+[2025-11-04 12:16:03,181]   INFO - agent.impl.AgentPortFileWriter - Writing agent runtime file to /home/kleymkovt/electronic_library/buildAgent/logs/buildAgent.xmlRpcPort
+[2025-11-04 12:16:03,181]   INFO - agent.impl.AgentPortFileWriter - Launcher version is 2025.07-197398
+[2025-11-04 12:16:03,182]   INFO - agent.impl.AgentPortFileWriter - Writing agent runtime file to /home/kleymkovt/electronic_library/buildAgent/logs/buildAgent.xmlRpcPort :DONE!
+[2025-11-04 12:16:03,182]   INFO -    jetbrains.buildServer.AGENT - Build agent started
+[2025-11-04 12:16:03,184]   INFO - buildServer.AGENT.registration - Registering on server via URL "http://localhost:8111": AgentDetails{Name='ubuntu-agent', AgentId=null, BuildId=null, AgentOwnAddress='null', AlternativeAddresses=[], Port=9090, Version='197398', PluginsVersion='NA', AvailableRunners=[], AvailableVcs=[], AuthorizationToken='', PingCode='lrDHjzNUIqKK0duKnTMiolcHBGasqamr'}
+[2025-11-04 12:16:03,353]   INFO - buildServer.AGENT.registration - Server supports the following communication protocols: [polling]
+[2025-11-04 12:16:03,354]   INFO - buildServer.AGENT.registration - Trying to register on server using 'polling' protocol.
+[2025-11-04 12:16:03,558]   INFO - ldServer.AGENT.PollingProtocol - Start polling server for commands
+[2025-11-04 12:16:03,559]   INFO - buildServer.AGENT.registration - Registered on server with id 11 and authorization token '50d53b832c9574cc9c1085b6d7c3d831'
+[2025-11-04 12:16:03,559]   INFO - buildServer.AGENT.registration - If this is the first time this agent registered on the server make sure it is authorized by administrator in the server web UI.
+[2025-11-04 12:16:03,572]   INFO - ldServer.AGENT.PollingProtocol - New command is received from server "upgrade" {id = 2262}
+[2025-11-04 12:16:03,574]   INFO -    jetbrains.buildServer.AGENT - Upgrade call received from the server
+[2025-11-04 12:16:03,574]   INFO -    jetbrains.buildServer.AGENT - Will upgrade when become idle
+[2025-11-04 12:16:03,574]   INFO -    jetbrains.buildServer.AGENT - Wait for build agent registration to finish
+[2025-11-04 12:16:03,575]   INFO -    jetbrains.buildServer.AGENT - Wait for registration to finish, currently in progress: false
+[2025-11-04 12:16:03,685]   INFO - r.artifacts.impl.HttpDiskCache - Cleaning up items with life time in cache greater than 172800 seconds
+[2025-11-04 12:16:03,687]   INFO - r.artifacts.impl.HttpDiskCache - Finished cleaning up expired items, 0 items removed
+[2025-11-04 12:16:03,688]   INFO - dDirectoryBasedCleanupRegistry - Removing files from /home/kleymkovt/electronic_library/buildAgent/work/.old
+[2025-11-04 12:16:03,707]   INFO - l.directories.DirectoryMapImpl - Cleaning up old checkout directories. Default lifetime = 192 hour(s)
+[2025-11-04 12:16:03,728]   INFO - dDirectoryBasedCleanupRegistry - Removing files from /home/kleymkovt/electronic_library/buildAgent/temp/.old
+[2025-11-04 12:16:04,089]   WARN - ldServer.AGENT.PollingProtocol - The command "testLocal" {id = 2261} has been already executed, continue polling.
+[2025-11-04 12:16:04,107]   INFO -    jetbrains.buildServer.AGENT - Done waiting for registration to finish
+[2025-11-04 12:16:04,107]   INFO -    jetbrains.buildServer.AGENT - Registration of build agent is finished.
+[2025-11-04 12:16:04,114]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/teamcity-agent.xml ==> /home/kleymkovt/electronic_library/buildAgent/temp/7N65QC8Spu5Bnchq1P7xN84x9u8dB5AR
+[2025-11-04 12:16:04,154]   INFO -    jetbrains.buildServer.AGENT - An agent restart is necessary for this upgrade; will restart once all preparations are complete
+[2025-11-04 12:16:04,154]   INFO -    jetbrains.buildServer.AGENT - Stop command was not performed. No build to stop with reason: agent shutdown
+[2025-11-04 12:16:04,154]   INFO -    jetbrains.buildServer.AGENT - Starting agent shutdown sequence, reason: Restart agent, failed to download upgrade from server
+[2025-11-04 12:16:04,158]   INFO - gent.impl.DiskSpaceCleanerImpl - Try to ensure 3 GB free space under directory /home/kleymkovt/electronic_library/buildAgent/update before upgrade. Currently available 55.71 GB
+[2025-11-04 12:16:04,158]   INFO -    jetbrains.buildServer.AGENT - Upgrade mode: jetbrains.buildServer.agent.impl.upgrade.modes.FullUpgradeMode
+[2025-11-04 12:16:04,158]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/agentSystemInfo.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/agentSystemInfo.zip
+[2025-11-04 12:16:04,159]   INFO - agent.impl.AgentPortFileWriter - Delete agent runtime file from /home/kleymkovt/electronic_library/buildAgent/logs/buildAgent.xmlRpcPort
+[2025-11-04 12:16:04,162]   INFO - ldServer.AGENT.PollingProtocol - Stop polling server for commands
+[2025-11-04 12:16:04,163]   INFO -    jetbrains.buildServer.AGENT - Unregistering from the server. Agent id: 11
+[2025-11-04 12:16:04,163]   INFO -    jetbrains.buildServer.AGENT - Before unregistering from the server.
+[2025-11-04 12:16:04,168]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/agentSystemInfo.zip has been downloaded successfully, file hash: SHA-1C6Cbpede7kauydhGsgVSG2DlMt0=
+[2025-11-04 12:16:04,169]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/amazonEC2.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/amazonEC2.zip
+[2025-11-04 12:16:04,174]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/amazonEC2.zip has been downloaded successfully, file hash: SHA-1t6bUj9XhRBodZoPg+VPGHgA9Lvs=
+[2025-11-04 12:16:04,175]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/ant-net-tasks.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/ant-net-tasks.zip
+[2025-11-04 12:16:04,199]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/ant-net-tasks.zip has been downloaded successfully, file hash: SHA-1X8BwGgDTsh/doSr5T7YscOMN/6M=
+[2025-11-04 12:16:04,199]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/ant.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/ant.zip
+[2025-11-04 12:16:04,219]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/ant.zip has been downloaded successfully, file hash: SHA-1LxhKcXvGrr7mRVin3roGrRuWgoY=
+[2025-11-04 12:16:04,219]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/antPlugin.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/antPlugin.zip
+[2025-11-04 12:16:04,226]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/antPlugin.zip has been downloaded successfully, file hash: SHA-11AmwbhT/wZ0ffh7HU/vvlWB4OjY=
+[2025-11-04 12:16:04,227]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/aws-core-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/aws-core-agent.zip
+[2025-11-04 12:16:04,285]   INFO -    jetbrains.buildServer.AGENT - Unregistered from the server.
+[2025-11-04 12:16:04,289]   INFO -    jetbrains.buildServer.AGENT - Shutdown agent WebServer start
+[2025-11-04 12:16:04,289]   INFO -    jetbrains.buildServer.AGENT - Shutdown agent WebServer finish
+[2025-11-04 12:16:04,289]   INFO -    jetbrains.buildServer.AGENT - Shutdown agent finish
+[2025-11-04 12:16:04,301]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/aws-core-agent.zip has been downloaded successfully, file hash: SHA-1/eJwPP4Yt4HwodiSjnst+B4uMj8=
+[2025-11-04 12:16:04,301]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/cloud-vmware-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/cloud-vmware-agent.zip
+[2025-11-04 12:16:04,306]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/cloud-vmware-agent.zip has been downloaded successfully, file hash: SHA-1R9IAu2zfsD4cpjv0X2Zc34OP8V8=
+[2025-11-04 12:16:04,306]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/commandLineRunner.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/commandLineRunner.zip
+[2025-11-04 12:16:04,310]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/commandLineRunner.zip has been downloaded successfully, file hash: SHA-1FaBHbmkgIvdnOKGWDcPJefZQoNY=
+[2025-11-04 12:16:04,310]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/coveragePlugin.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/coveragePlugin.zip
+[2025-11-04 12:16:04,319]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/coveragePlugin.zip has been downloaded successfully, file hash: SHA-1i0dMC2JIXvkvZd1qM+rmgZ03eAc=
+[2025-11-04 12:16:04,320]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/crashDetector.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/crashDetector.zip
+[2025-11-04 12:16:04,324]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/crashDetector.zip has been downloaded successfully, file hash: SHA-1KzsfP0UR7U50TKLU4mDa8t1xxE8=
+[2025-11-04 12:16:04,325]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/deploy-runner-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/deploy-runner-agent.zip
+[2025-11-04 12:16:04,398]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/deploy-runner-agent.zip has been downloaded successfully, file hash: SHA-14jCss/8BrKVqfzBJ0jgKPWUkF9k=
+[2025-11-04 12:16:04,399]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/docker-support.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/docker-support.zip
+[2025-11-04 12:16:04,412]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/docker-support.zip has been downloaded successfully, file hash: SHA-1gnk3XZ1ZilO5EtfPqi8D1UMEzcw=
+[2025-11-04 12:16:04,412]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/dotnet.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/dotnet.zip
+[2025-11-04 12:16:04,444]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/dotnet.zip has been downloaded successfully, file hash: SHA-1hv2wUv+FLEw0CBud7DwtuB6oEoY=
+[2025-11-04 12:16:04,445]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/duplicatePlugin.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/duplicatePlugin.zip
+[2025-11-04 12:16:04,451]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/duplicatePlugin.zip has been downloaded successfully, file hash: SHA-1BjoIvS8SoL8W7OOlxwnQIJtqBFI=
+[2025-11-04 12:16:04,451]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/environment-fetcher.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/environment-fetcher.zip
+[2025-11-04 12:16:04,455]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/environment-fetcher.zip has been downloaded successfully, file hash: SHA-1gO6bqklUG/K7YNf/XTwSX/y1xBQ=
+[2025-11-04 12:16:04,455]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/file-content-replacer.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/file-content-replacer.zip
+[2025-11-04 12:16:04,460]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/file-content-replacer.zip has been downloaded successfully, file hash: SHA-1iYjR/HkmOfSipiXyf0Zb8sIyCqY=
+[2025-11-04 12:16:04,460]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/file-to-build-log-streaming-plugin-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/file-to-build-log-streaming-plugin-agent.zip
+[2025-11-04 12:16:04,473]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/file-to-build-log-streaming-plugin-agent.zip has been downloaded successfully, file hash: SHA-1iJ+CKGWrapEtCLCXN1uDRnIxG5U=
+[2025-11-04 12:16:04,473]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/fxcop.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/fxcop.zip
+[2025-11-04 12:16:04,480]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/fxcop.zip has been downloaded successfully, file hash: SHA-1EQvgDRtXlspnDqn8mBqYEt/AnPU=
+[2025-11-04 12:16:04,480]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/gant.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/gant.zip
+[2025-11-04 12:16:04,529]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/gant.zip has been downloaded successfully, file hash: SHA-1dXsgz9rB/9F0aktO/1c2lZBWx+M=
+[2025-11-04 12:16:04,529]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/gantPlugin.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/gantPlugin.zip
+[2025-11-04 12:16:04,532]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/gantPlugin.zip has been downloaded successfully, file hash: SHA-1AHLbWuQL0QSJKpcXi6jNO7p8w1E=
+[2025-11-04 12:16:04,533]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/golang-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/golang-agent.zip
+[2025-11-04 12:16:04,544]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/golang-agent.zip has been downloaded successfully, file hash: SHA-1/4WRhIYC0xrQemv0ZNEbBbuwLkw=
+[2025-11-04 12:16:04,544]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/gradle-runner.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/gradle-runner.zip
+[2025-11-04 12:16:04,612]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/gradle-runner.zip has been downloaded successfully, file hash: SHA-1EBjl3kWvBUV1l+X91Iv/gZRhaYo=
+[2025-11-04 12:16:04,613]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/hashicorp-vault-plugin.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/hashicorp-vault-plugin.zip
+[2025-11-04 12:16:04,735]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/hashicorp-vault-plugin.zip has been downloaded successfully, file hash: SHA-1G91ijywpuleAPiWGZFM1b0gmDI0=
+[2025-11-04 12:16:04,736]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/idea-runner.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/idea-runner.zip
+[2025-11-04 12:16:04,743]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/idea-runner.zip has been downloaded successfully, file hash: SHA-1ivCkspYnPefN84UzsIjMUUxEqT4=
+[2025-11-04 12:16:04,743]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/inspectionPlugin.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/inspectionPlugin.zip
+[2025-11-04 12:16:04,747]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/inspectionPlugin.zip has been downloaded successfully, file hash: SHA-1VDG4DsJFzdkLWXiWb8UdYYcjWPQ=
+[2025-11-04 12:16:04,747]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/java-dowser.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/java-dowser.zip
+[2025-11-04 12:16:04,752]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/java-dowser.zip has been downloaded successfully, file hash: SHA-1eFbDVfv6ZTm1gJ9Hmp1L9b93bYs=
+[2025-11-04 12:16:04,752]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/jetbrains.git.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/jetbrains.git.zip
+[2025-11-04 12:16:04,795]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/jetbrains.git.zip has been downloaded successfully, file hash: SHA-1uSIQN9q66Ltb3wg4A2sDYQ8+XbE=
+[2025-11-04 12:16:04,795]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/jps.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/jps.zip
+[2025-11-04 12:16:05,078]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/jps.zip has been downloaded successfully, file hash: SHA-1pwFijXxsyiawOMD8WKKa2zxeJCU=
+[2025-11-04 12:16:05,079]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/junitPlugin.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/junitPlugin.zip
+[2025-11-04 12:16:05,083]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/junitPlugin.zip has been downloaded successfully, file hash: SHA-1GKaW/cIsQYVKPILo3nwuf583F0Y=
+[2025-11-04 12:16:05,084]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/jvm-update.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/jvm-update.zip
+[2025-11-04 12:16:05,087]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/jvm-update.zip has been downloaded successfully, file hash: SHA-1/Vs84JA/fbT2ZG6/REp1Slvz8eo=
+[2025-11-04 12:16:05,087]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/kotlin-script-runner-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/kotlin-script-runner-agent.zip
+[2025-11-04 12:16:05,099]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/kotlin-script-runner-agent.zip has been downloaded successfully, file hash: SHA-1Nwx51+K6gBjArp2WFPIA9MymbQQ=
+[2025-11-04 12:16:05,099]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/mavenPlugin.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/mavenPlugin.zip
+[2025-11-04 12:16:05,164]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/mavenPlugin.zip has been downloaded successfully, file hash: SHA-1/OFSwrS+cITwblHQ3hX8ibRZiP0=
+[2025-11-04 12:16:05,164]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/mercurial.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/mercurial.zip
+[2025-11-04 12:16:05,169]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/mercurial.zip has been downloaded successfully, file hash: SHA-1MBNpE32dnEsM6DrKJ/toD6IUM6w=
+[2025-11-04 12:16:05,169]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/nodejs-agent-197398.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/nodejs-agent-197398.zip
+[2025-11-04 12:16:05,178]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/nodejs-agent-197398.zip has been downloaded successfully, file hash: SHA-140h0LIy1aB60VRwWSfHLdH6El7Y=
+[2025-11-04 12:16:05,178]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/nuget-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/nuget-agent.zip
+[2025-11-04 12:16:05,220]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/nuget-agent.zip has been downloaded successfully, file hash: SHA-1lCPQO1gdm+ZrQZzVCSuBiXH2dzQ=
+[2025-11-04 12:16:05,220]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/perfmon-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/perfmon-agent.zip
+[2025-11-04 12:16:05,242]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/perfmon-agent.zip has been downloaded successfully, file hash: SHA-1DVHiYFrq1egukmU9C9heZDOTO5c=
+[2025-11-04 12:16:05,242]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/perforce-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/perforce-agent.zip
+[2025-11-04 12:16:05,249]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/perforce-agent.zip has been downloaded successfully, file hash: SHA-1DdRx93Sua4yvWKOfr1QUvjzy76w=
+[2025-11-04 12:16:05,249]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/plugin-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/plugin-agent.zip
+[2025-11-04 12:16:05,259]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/plugin-agent.zip has been downloaded successfully, file hash: SHA-1qPWgOmbwSPsPJbrbnk3hnfo0boI=
+[2025-11-04 12:16:05,261]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/python-agent-197398.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/python-agent-197398.zip
+[2025-11-04 12:16:05,275]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/python-agent-197398.zip has been downloaded successfully, file hash: SHA-1zqVdt38WhW6NyiTyHuBkeqJx2ZY=
+[2025-11-04 12:16:05,275]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/qodana.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/qodana.zip
+[2025-11-04 12:16:05,344]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/qodana.zip has been downloaded successfully, file hash: SHA-19Xotat7aE0H11ELK0a+f81u9Qeg=
+[2025-11-04 12:16:05,344]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/rake-runner.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/rake-runner.zip
+[2025-11-04 12:16:05,390]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/rake-runner.zip has been downloaded successfully, file hash: SHA-1rvj7sB8PPO+ENS8J/REt//YYqgo=
+[2025-11-04 12:16:05,390]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/remoteAccess.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/remoteAccess.zip
+[2025-11-04 12:16:05,397]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/remoteAccess.zip has been downloaded successfully, file hash: SHA-1mGtzLQLE/0Qi8H+SulaAi9bQDBU=
+[2025-11-04 12:16:05,397]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/s3-artifact-storage-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/s3-artifact-storage-agent.zip
+[2025-11-04 12:16:05,463]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/s3-artifact-storage-agent.zip has been downloaded successfully, file hash: SHA-1WyjO+GIc3twHzTFpoeJ5cjiX1c4=
+[2025-11-04 12:16:05,463]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/sbt-runner-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/sbt-runner-agent.zip
+[2025-11-04 12:16:05,482]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/sbt-runner-agent.zip has been downloaded successfully, file hash: SHA-1XxoWmAwbhd3xiTQR2nF/vhf7D3M=
+[2025-11-04 12:16:05,482]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/ssh-manager.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/ssh-manager.zip
+[2025-11-04 12:16:05,485]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/ssh-manager.zip has been downloaded successfully, file hash: SHA-17VM2FbSPFiXT4aoPJtW9DRBRQF8=
+[2025-11-04 12:16:05,485]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/stacktracesPlugin.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/stacktracesPlugin.zip
+[2025-11-04 12:16:05,513]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/stacktracesPlugin.zip has been downloaded successfully, file hash: SHA-1zK1xw1TkMsmi1Sr41p1GEFo3QtQ=
+[2025-11-04 12:16:05,513]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/svnAgent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/svnAgent.zip
+[2025-11-04 12:16:05,602]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/svnAgent.zip has been downloaded successfully, file hash: SHA-1dIHgOt1YMQHxzOjAyis6Rj5BGyE=
+[2025-11-04 12:16:05,602]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/swabra.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/swabra.zip
+[2025-11-04 12:16:05,607]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/swabra.zip has been downloaded successfully, file hash: SHA-1kidAFM9dYD6EA6+z2wjVqrEhCBg=
+[2025-11-04 12:16:05,607]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/teamcity-agent-terminal-plugin-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/teamcity-agent-terminal-plugin-agent.zip
+[2025-11-04 12:16:05,632]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/teamcity-agent-terminal-plugin-agent.zip has been downloaded successfully, file hash: SHA-1iKCMh7bQLiWeYBUjhRfvOO/0DUA=
+[2025-11-04 12:16:05,632]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/teamcity-kubernetes-plugin-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/teamcity-kubernetes-plugin-agent.zip
+[2025-11-04 12:16:05,684]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/teamcity-kubernetes-plugin-agent.zip has been downloaded successfully, file hash: SHA-13GT/cWA2SfsD8ABA+oVwF+uV1oE=
+[2025-11-04 12:16:05,684]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/teamcity-parallel-tests-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/teamcity-parallel-tests-agent.zip
+[2025-11-04 12:16:05,688]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/teamcity-parallel-tests-agent.zip has been downloaded successfully, file hash: SHA-14BcDCDS3l7wbBB25N1UtpX5inAg=
+[2025-11-04 12:16:05,689]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/testNGPlugin.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/testNGPlugin.zip
+[2025-11-04 12:16:05,693]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/testNGPlugin.zip has been downloaded successfully, file hash: SHA-19wUkawM95Uyvcj+FuWCRN8E5m6o=
+[2025-11-04 12:16:05,693]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/tfs-agent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/tfs-agent.zip
+[2025-11-04 12:16:05,938]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/tfs-agent.zip has been downloaded successfully, file hash: SHA-1Qy+B8WNxI+4G+aWR3WrNjw7sKTY=
+[2025-11-04 12:16:05,938]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/xcode-runner.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/xcode-runner.zip
+[2025-11-04 12:16:05,949]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/xcode-runner.zip has been downloaded successfully, file hash: SHA-1nyI4t1qiMHomDcLPLvFGdg1vYqk=
+[2025-11-04 12:16:05,950]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/plugins/xml-report-plugin.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/plugins/xml-report-plugin.zip
+[2025-11-04 12:16:05,955]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/plugins/xml-report-plugin.zip has been downloaded successfully, file hash: SHA-1oV1+cublN+4bSlG3B+5F1Dv/arU=
+[2025-11-04 12:16:05,955]   INFO -    jetbrains.buildServer.AGENT - Downloading http://localhost:8111/update/buildAgent.zip ==> /home/kleymkovt/electronic_library/buildAgent/update/buildAgent.zip
+[2025-11-04 12:16:06,405]   INFO -    jetbrains.buildServer.AGENT - The file /home/kleymkovt/electronic_library/buildAgent/update/buildAgent.zip has been downloaded successfully, file hash: SHA-10kXgjxfZsB6hUMTfrMKOjzWftw0=
+[2025-11-04 12:16:06,660]   INFO - rocesses.ProcessTreeTerminator - Using jetbrains.buildServer.processes.ProcessTreeTerminatorLinux
+[2025-11-04 12:16:06,661]   INFO - .ProcessTreeTerminatorImplBase - Collecting processes from PIDs current process
+[2025-11-04 12:16:06,661]   INFO - .ProcessTreeTerminatorImplBase - Will use command 'sh -c echo $$ && ps awwxo pid,ppid,command | tee'.
+[2025-11-04 12:16:06,708]   INFO - .ProcessTreeTerminatorImplBase - Will use command 'sh -c echo $$ && ps awwxo pid,ppid,command | tee'.
+[2025-11-04 12:16:06,744]   INFO - ses.ProcessTreeTerminatorLinux - Second thread id is 15229
+[2025-11-04 12:16:06,744]   INFO - ses.ProcessTreeTerminatorLinux - Thread is Process thread model: false
+[2025-11-04 12:16:06,744]   INFO - .ProcessTreeTerminatorImplBase - Current process PID 15229
+[2025-11-04 12:16:06,745]   INFO - .ProcessTreeTerminatorImplBase - No processes to kill
+[2025-11-04 12:16:06,747]   INFO -    jetbrains.buildServer.AGENT - Exit for upgrade
+[2025-11-04 12:16:06,747]   INFO - ent.impl.upgrade.AgentExitCode - Agent exited. Upgrade process
+[2025-11-04 12:16:21,479]   INFO -   jetbrains.buildServer.SERVER - Starting TeamCity agent
+[2025-11-04 12:16:21,481]   INFO - s.buildServer.agent.AgentMain2 - 
+
+
+
+
+
+
+[2025-11-04 12:16:21,481]   INFO - s.buildServer.agent.AgentMain2 - ===========================================================
+[2025-11-04 12:16:21,488]   INFO - s.buildServer.agent.AgentMain2 - TeamCity Build Agent 2025.07.3 (build 197398)
+[2025-11-04 12:16:21,495]   INFO - s.buildServer.agent.AgentMain2 - OS: Linux, version 6.14.0-34-generic, amd64, Current user: kleymkovt, Time zone: UTC
+[2025-11-04 12:16:21,495]   INFO - s.buildServer.agent.AgentMain2 - Java: 17.0.16, OpenJDK 64-Bit Server VM (17.0.16+8-Ubuntu-0ubuntu124.04.1, mixed mode, sharing), OpenJDK Runtime Environment (17.0.16+8-Ubuntu-0ubuntu124.04.1), Ubuntu; JVM parameters: -ea -XX:+DisableAttachMechanism --add-opens=java.base/java.lang=ALL-UNNAMED -XX:+IgnoreUnrecognizedVMOptions -Xmx384m -Dteamcity_logs=../logs/ -Dlog4j2.configurationFile=file:../conf/teamcity-agent-log4j2.xml
+[2025-11-04 12:16:21,495]   INFO - s.buildServer.agent.AgentMain2 - Agent home is "/home/kleymkovt/electronic_library/buildAgent"
+[2025-11-04 12:16:21,495]   INFO - s.buildServer.agent.AgentMain2 - Starting...
+[2025-11-04 12:16:22,306]   INFO -    jetbrains.buildServer.AGENT - Calculating CPU benchmark index...
+[2025-11-04 12:16:22,401]   INFO - dAgentConfigurationInitializer - Loading build agent configuration from /home/kleymkovt/electronic_library/buildAgent/conf/buildAgent.properties
+[2025-11-04 12:16:22,442]   INFO - s.buildServer.agent.AgentMain2 - Working dir: /home/kleymkovt/electronic_library/buildAgent/work
+[2025-11-04 12:16:22,442]   INFO - s.buildServer.agent.AgentMain2 - Temp dir: /home/kleymkovt/electronic_library/buildAgent/temp
+[2025-11-04 12:16:22,443]   INFO - rver.plugins.PluginManagerImpl - ===========================================================
+[2025-11-04 12:16:22,443]   INFO - rver.plugins.PluginManagerImpl - Plugins initialization started...
+[2025-11-04 12:16:22,443]   INFO - rver.plugins.PluginManagerImpl - Scanning plugins folders
+[2025-11-04 12:16:22,445]   INFO - ugins.files.OldPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/docker-support.zip" (size: 3395811) to "/home/kleymkovt/electronic_library/buildAgent/plugins", unpack prefix "docker-support"
+[2025-11-04 12:16:22,511]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/cloud-vmware-agent.zip" (size: 14781) to "/home/kleymkovt/electronic_library/buildAgent/plugins/cloud-vmware-agent", unpack prefix ""
+[2025-11-04 12:16:22,522]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/qodana.zip" (size: 14452173) to "/home/kleymkovt/electronic_library/buildAgent/plugins/qodana", unpack prefix ""
+[2025-11-04 12:16:22,637]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/file-to-build-log-streaming-plugin-agent.zip" (size: 3083768) to "/home/kleymkovt/electronic_library/buildAgent/plugins/file-to-build-log-streaming-plugin-agent", unpack prefix ""
+[2025-11-04 12:16:22,664]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/rake-runner.zip" (size: 254479) to "/home/kleymkovt/electronic_library/buildAgent/plugins/rake-runner", unpack prefix ""
+[2025-11-04 12:16:22,676]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/ssh-manager.zip" (size: 29441) to "/home/kleymkovt/electronic_library/buildAgent/plugins/ssh-manager", unpack prefix ""
+[2025-11-04 12:16:22,680]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/python-agent-197398.zip" (size: 2486599) to "/home/kleymkovt/electronic_library/buildAgent/plugins/python-agent-197398", unpack prefix ""
+[2025-11-04 12:16:22,704]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/jvm-update.zip" (size: 7970) to "/home/kleymkovt/electronic_library/buildAgent/plugins/jvm-update", unpack prefix ""
+[2025-11-04 12:16:22,707]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/ant-net-tasks.zip" (size: 1282547) to "/home/kleymkovt/electronic_library/buildAgent/tools/ant-net-tasks", unpack prefix ""
+[2025-11-04 12:16:22,720]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/xml-report-plugin.zip" (size: 416024) to "/home/kleymkovt/electronic_library/buildAgent/plugins/xml-report-plugin", unpack prefix ""
+[2025-11-04 12:16:22,727]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/ant.zip" (size: 3208196) to "/home/kleymkovt/electronic_library/buildAgent/plugins/ant", unpack prefix ""
+[2025-11-04 12:16:22,772]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/stacktracesPlugin.zip" (size: 4587141) to "/home/kleymkovt/electronic_library/buildAgent/plugins/stacktracesPlugin", unpack prefix ""
+[2025-11-04 12:16:23,051]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/antPlugin.zip" (size: 76644) to "/home/kleymkovt/electronic_library/buildAgent/plugins/antPlugin", unpack prefix ""
+[2025-11-04 12:16:23,055]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/deploy-runner-agent.zip" (size: 20410639) to "/home/kleymkovt/electronic_library/buildAgent/plugins/deploy-runner-agent", unpack prefix ""
+[2025-11-04 12:16:23,217]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/junitPlugin.zip" (size: 16084) to "/home/kleymkovt/electronic_library/buildAgent/plugins/junitPlugin", unpack prefix ""
+[2025-11-04 12:16:23,220]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/crashDetector.zip" (size: 14032) to "/home/kleymkovt/electronic_library/buildAgent/plugins/crashDetector", unpack prefix ""
+[2025-11-04 12:16:23,223]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/coveragePlugin.zip" (size: 1570633) to "/home/kleymkovt/electronic_library/buildAgent/plugins/coveragePlugin", unpack prefix ""
+[2025-11-04 12:16:23,239]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/s3-artifact-storage-agent.zip" (size: 20144488) to "/home/kleymkovt/electronic_library/buildAgent/plugins/s3-artifact-storage-agent", unpack prefix ""
+[2025-11-04 12:16:23,719]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/testNGPlugin.zip" (size: 42490) to "/home/kleymkovt/electronic_library/buildAgent/plugins/testNGPlugin", unpack prefix ""
+[2025-11-04 12:16:23,731]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/duplicatePlugin.zip" (size: 47452) to "/home/kleymkovt/electronic_library/buildAgent/plugins/duplicatePlugin", unpack prefix ""
+[2025-11-04 12:16:23,736]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/amazonEC2.zip" (size: 34610) to "/home/kleymkovt/electronic_library/buildAgent/plugins/amazonEC2", unpack prefix ""
+[2025-11-04 12:16:23,741]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/teamcity-kubernetes-plugin-agent.zip" (size: 14772990) to "/home/kleymkovt/electronic_library/buildAgent/plugins/teamcity-kubernetes-plugin-agent", unpack prefix ""
+[2025-11-04 12:16:24,214]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/fxcop.zip" (size: 39255) to "/home/kleymkovt/electronic_library/buildAgent/plugins/fxcop", unpack prefix ""
+[2025-11-04 12:16:24,243]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/environment-fetcher.zip" (size: 63563) to "/home/kleymkovt/electronic_library/buildAgent/plugins/environment-fetcher", unpack prefix ""
+[2025-11-04 12:16:24,249]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/golang-agent.zip" (size: 1982001) to "/home/kleymkovt/electronic_library/buildAgent/plugins/golang-agent", unpack prefix ""
+[2025-11-04 12:16:24,269]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/teamcity-parallel-tests-agent.zip" (size: 4120) to "/home/kleymkovt/electronic_library/buildAgent/plugins/teamcity-parallel-tests-agent", unpack prefix ""
+[2025-11-04 12:16:24,273]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/gradle-runner.zip" (size: 5906510) to "/home/kleymkovt/electronic_library/buildAgent/plugins/gradle-runner", unpack prefix ""
+[2025-11-04 12:16:24,323]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/plugin-agent.zip" (size: 56232) to "/home/kleymkovt/electronic_library/buildAgent/plugins/plugin-agent", unpack prefix ""
+[2025-11-04 12:16:24,327]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/file-content-replacer.zip" (size: 82269) to "/home/kleymkovt/electronic_library/buildAgent/plugins/file-content-replacer", unpack prefix ""
+[2025-11-04 12:16:24,331]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/perfmon-agent.zip" (size: 4711907) to "/home/kleymkovt/electronic_library/buildAgent/plugins/perfmon-agent", unpack prefix ""
+[2025-11-04 12:16:24,342]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/hashicorp-vault-plugin.zip" (size: 32141906) to "/home/kleymkovt/electronic_library/buildAgent/plugins/hashicorp-vault-plugin", unpack prefix ""
+[2025-11-04 12:16:25,020]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/inspectionPlugin.zip" (size: 55963) to "/home/kleymkovt/electronic_library/buildAgent/plugins/inspectionPlugin", unpack prefix ""
+[2025-11-04 12:16:25,025]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/remoteAccess.zip" (size: 36997) to "/home/kleymkovt/electronic_library/buildAgent/plugins/remoteAccess", unpack prefix ""
+[2025-11-04 12:16:25,028]   INFO - ugins.files.OldPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/jetbrains.git.zip" (size: 14679321) to "/home/kleymkovt/electronic_library/buildAgent/plugins", unpack prefix "jetbrains.git"
+[2025-11-04 12:16:25,328]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/nodejs-agent-197398.zip" (size: 1690798) to "/home/kleymkovt/electronic_library/buildAgent/plugins/nodejs-agent-197398", unpack prefix ""
+[2025-11-04 12:16:25,360]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/gant.zip" (size: 8972527) to "/home/kleymkovt/electronic_library/buildAgent/tools/gant", unpack prefix ""
+[2025-11-04 12:16:25,613]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/nuget-agent.zip" (size: 11801182) to "/home/kleymkovt/electronic_library/buildAgent/plugins/nuget-agent", unpack prefix ""
+[2025-11-04 12:16:26,171]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/svnAgent.zip" (size: 10362888) to "/home/kleymkovt/electronic_library/buildAgent/plugins/svnAgent", unpack prefix ""
+[2025-11-04 12:16:26,231]   INFO -    jetbrains.buildServer.AGENT - CPU benchmark index is set to 841
+[2025-11-04 12:16:26,383]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/perforce-agent.zip" (size: 158913) to "/home/kleymkovt/electronic_library/buildAgent/plugins/perforce-agent", unpack prefix ""
+[2025-11-04 12:16:26,388]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/tfs-agent.zip" (size: 15962761) to "/home/kleymkovt/electronic_library/buildAgent/plugins/tfs-agent", unpack prefix ""
+[2025-11-04 12:16:26,774]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/jps.zip" (size: 58985048) to "/home/kleymkovt/electronic_library/buildAgent/tools/jps", unpack prefix ""
+[2025-11-04 12:16:28,564]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/aws-core-agent.zip" (size: 19072053) to "/home/kleymkovt/electronic_library/buildAgent/plugins/aws-core-agent", unpack prefix ""
+[2025-11-04 12:16:28,907]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/commandLineRunner.zip" (size: 16821) to "/home/kleymkovt/electronic_library/buildAgent/plugins/commandLineRunner", unpack prefix ""
+[2025-11-04 12:16:28,909]   INFO - ugins.files.OldPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/agentSystemInfo.zip" (size: 5965) to "/home/kleymkovt/electronic_library/buildAgent/plugins", unpack prefix "agentSystemInfo"
+[2025-11-04 12:16:28,912]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/gantPlugin.zip" (size: 11181) to "/home/kleymkovt/electronic_library/buildAgent/plugins/gantPlugin", unpack prefix ""
+[2025-11-04 12:16:28,915]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/dotnet.zip" (size: 10481971) to "/home/kleymkovt/electronic_library/buildAgent/plugins/dotnet", unpack prefix ""
+[2025-11-04 12:16:29,179]   INFO - ugins.files.OldPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/swabra.zip" (size: 86683) to "/home/kleymkovt/electronic_library/buildAgent/plugins", unpack prefix "swabra"
+[2025-11-04 12:16:29,181]   INFO - ugins.files.OldPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/xcode-runner.zip" (size: 175573) to "/home/kleymkovt/electronic_library/buildAgent/plugins", unpack prefix "xcode-runner"
+[2025-11-04 12:16:29,185]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/java-dowser.zip" (size: 43968) to "/home/kleymkovt/electronic_library/buildAgent/plugins/java-dowser", unpack prefix ""
+[2025-11-04 12:16:29,189]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/mavenPlugin.zip" (size: 12768943) to "/home/kleymkovt/electronic_library/buildAgent/plugins/mavenPlugin", unpack prefix ""
+[2025-11-04 12:16:29,517]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/sbt-runner-agent.zip" (size: 3699376) to "/home/kleymkovt/electronic_library/buildAgent/plugins/sbt-runner-agent", unpack prefix ""
+[2025-11-04 12:16:29,659]   INFO - ugins.files.OldPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/mercurial.zip" (size: 187822) to "/home/kleymkovt/electronic_library/buildAgent/plugins", unpack prefix "mercurial"
+[2025-11-04 12:16:29,663]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/kotlin-script-runner-agent.zip" (size: 1614849) to "/home/kleymkovt/electronic_library/buildAgent/plugins/kotlin-script-runner-agent", unpack prefix ""
+[2025-11-04 12:16:29,678]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/idea-runner.zip" (size: 492501) to "/home/kleymkovt/electronic_library/buildAgent/plugins/idea-runner", unpack prefix ""
+[2025-11-04 12:16:29,689]   INFO - ugins.files.NewPluginsUnpacker - Unpacking plugin "/home/kleymkovt/electronic_library/buildAgent/plugins/teamcity-agent-terminal-plugin-agent.zip" (size: 6857903) to "/home/kleymkovt/electronic_library/buildAgent/plugins/teamcity-agent-terminal-plugin-agent", unpack prefix ""
+[2025-11-04 12:16:29,874]   INFO - .plugins.files.JarSearcherBase - Scanning plugin folder: /home/kleymkovt/electronic_library/buildAgent/plugins
+[2025-11-04 12:16:29,935]   INFO - .plugins.files.JarSearcherBase - Scanning plugin folder: /home/kleymkovt/electronic_library/buildAgent/tools
+[2025-11-04 12:16:29,949]   INFO - rver.plugins.PluginManagerImpl - Found 55 non bundled plugins: [agentSystemInfo, amazonEC2, ant, ant-net-tasks, antPlugin, aws-core-agent, cloud-vmware-agent, commandLineRunner, coveragePlugin, crashDetector, deploy-runner-agent, docker-support, dotnet, duplicatePlugin, environment-fetcher, file-content-replacer, file-to-build-log-streaming-plugin-agent, fxcop, gant, gantPlugin, golang-agent, gradle-runner, hashicorp-vault-plugin, idea-runner, inspectionPlugin, java-dowser, jetbrains.git, jps, junitPlugin, jvm-update, kotlin-script-runner-agent, mavenPlugin, mercurial, nodejs-agent-197398, nuget-agent, perfmon-agent, perforce-agent, plugin-agent, python-agent-197398, qodana, rake-runner, remoteAccess, s3-artifact-storage-agent, sbt-runner-agent, ssh-manager, stacktracesPlugin, svnAgent, swabra, teamcity-agent-terminal-plugin-agent, teamcity-kubernetes-plugin-agent, teamcity-parallel-tests-agent, testNGPlugin, tfs-agent, xcode-runner, xml-report-plugin]
+[2025-11-04 12:16:29,949]   INFO - rver.plugins.PluginManagerImpl - Found 0 bundled plugins: []
+[2025-11-04 12:16:29,951]   INFO - les.ExecutableAttributesSetter - Setting executable bit for: /home/kleymkovt/electronic_library/buildAgent/plugins/ant/bin/ant
+[2025-11-04 12:16:29,952]   INFO - les.ExecutableAttributesSetter - Setting executable bit for: /home/kleymkovt/electronic_library/buildAgent/plugins/ant/bin/antRun
+[2025-11-04 12:16:29,952]   INFO - les.ExecutableAttributesSetter - Setting executable bit for: /home/kleymkovt/electronic_library/buildAgent/plugins/ant/bin/ant.bat
+[2025-11-04 12:16:29,952]   INFO - les.ExecutableAttributesSetter - Setting executable bit for: /home/kleymkovt/electronic_library/buildAgent/plugins/ant/bin/ant.cmd
+[2025-11-04 12:16:29,952]   INFO - les.ExecutableAttributesSetter - Setting executable bit for: /home/kleymkovt/electronic_library/buildAgent/plugins/ant/bin/antenv.cmd
+[2025-11-04 12:16:29,952]   INFO - les.ExecutableAttributesSetter - Setting executable bit for: /home/kleymkovt/electronic_library/buildAgent/plugins/ant/bin/envset.cmd
+[2025-11-04 12:16:29,952]   INFO - les.ExecutableAttributesSetter - Setting executable bit for: /home/kleymkovt/electronic_library/buildAgent/plugins/ant/bin/lcp.bat
+[2025-11-04 12:16:29,952]   INFO - les.ExecutableAttributesSetter - Setting executable bit for: /home/kleymkovt/electronic_library/buildAgent/plugins/ant/bin/runrc.cmd
+[2025-11-04 12:16:29,952]   INFO - les.ExecutableAttributesSetter - Setting executable bit for: /home/kleymkovt/electronic_library/buildAgent/plugins/ant/bin/antRun.pl
+[2025-11-04 12:16:29,952]   INFO - les.ExecutableAttributesSetter - Setting executable bit for: /home/kleymkovt/electronic_library/buildAgent/plugins/ant/bin/complete-ant-cmd.pl
+[2025-11-04 12:16:29,952]   INFO - les.ExecutableAttributesSetter - Setting executable bit for: /home/kleymkovt/electronic_library/buildAgent/plugins/ant/bin/runant.pl
+[2025-11-04 12:16:29,952]   INFO - les.ExecutableAttributesSetter - Setting executable bit for: /home/kleymkovt/electronic_library/buildAgent/plugins/ant/bin/runant.py
+[2025-11-04 12:16:29,952]   INFO - les.ExecutableAttributesSetter - Setting executable bit for: /home/kleymkovt/electronic_library/buildAgent/tools/gant/bin/gant
+[2025-11-04 12:16:29,952]   INFO - les.ExecutableAttributesSetter - Setting executable bit for: /home/kleymkovt/electronic_library/buildAgent/tools/gant/bin/startGroovy
+[2025-11-04 12:16:29,953]   INFO - rver.plugins.PluginsCollection - Load shared classloader for 15 plugins [agentSystemInfo, ant, commandLineRunner, crashDetector, environment-fetcher, file-content-replacer, fxcop, gradle-runner, java-dowser, jetbrains.git, mercurial, remoteAccess, ssh-manager, stacktracesPlugin, xml-report-plugin]
+[2025-11-04 12:16:29,966]   INFO - rver.plugins.PluginsCollection - Load standalone classloaders for 37 plugins [amazonEC2, antPlugin, aws-core-agent, cloud-vmware-agent, coveragePlugin, deploy-runner-agent, docker-support, dotnet, duplicatePlugin, file-to-build-log-streaming-plugin-agent, gantPlugin, golang-agent, hashicorp-vault-plugin, idea-runner, inspectionPlugin, junitPlugin, jvm-update, kotlin-script-runner-agent, mavenPlugin, nodejs-agent-197398, nuget-agent, perfmon-agent, perforce-agent, plugin-agent, python-agent-197398, qodana, rake-runner, s3-artifact-storage-agent, sbt-runner-agent, svnAgent, swabra, teamcity-agent-terminal-plugin-agent, teamcity-kubernetes-plugin-agent, teamcity-parallel-tests-agent, testNGPlugin, tfs-agent, xcode-runner]
+[2025-11-04 12:16:30,053]   INFO - t.golang.BuildMessagesListener - Init the Golang plugin
+[2025-11-04 12:16:30,205]   INFO - .vault.agent.VaultBuildFeature - HashiCorp Vault integration enabled
+[2025-11-04 12:16:30,400]   INFO - gers.vcs.git.MirrorManagerImpl - No mapping file found at /home/kleymkovt/electronic_library/buildAgent/system/git/map, create a new one
+[2025-11-04 12:16:30,401]   INFO - gers.vcs.git.MirrorManagerImpl - Restore mapping from existing repositories
+[2025-11-04 12:16:30,401]   INFO - gers.vcs.git.MirrorManagerImpl - No existing repositories found
+[2025-11-04 12:16:30,456]   INFO - heSettingsProviderRegistryImpl - Registered dependency cache provider for the cache type gradle-runner
+[2025-11-04 12:16:30,510]   INFO - .vmware.VMWarePropertiesReader - VSphere plugin initializing...
+[2025-11-04 12:16:30,514]   INFO - .vmware.VMWarePropertiesReader - Unable to locate vmware-rpctool. Looks like not a VMWare VM or VWWare tools are not installed
+[2025-11-04 12:16:30,592]   INFO - KubeAgentConfigurationProvider - Initializing Kube Provider...
+[2025-11-04 12:16:30,612]   INFO - heSettingsProviderRegistryImpl - Registered dependency cache provider for the cache type Maven2
+[2025-11-04 12:16:31,179]   INFO - heSettingsProviderRegistryImpl - Registered dependency cache provider for the cache type dotnet
+[2025-11-04 12:16:31,780]   INFO - rver.plugins.PluginManagerImpl - Plugins initialization completed (55 plugins loaded): [agentSystemInfo, amazonEC2, ant, ant-net-tasks, antPlugin, aws-core-agent, cloud-vmware-agent, commandLineRunner, coveragePlugin, crashDetector, deploy-runner-agent, docker-support, dotnet, duplicatePlugin, environment-fetcher, file-content-replacer, file-to-build-log-streaming-plugin-agent, fxcop, gant, gantPlugin, golang-agent, gradle-runner, hashicorp-vault-plugin, idea-runner, inspectionPlugin, java-dowser, jetbrains.git, jps, junitPlugin, jvm-update, kotlin-script-runner-agent, mavenPlugin, mercurial, nodejs-agent-197398, nuget-agent, perfmon-agent, perforce-agent, plugin-agent, python-agent-197398, qodana, rake-runner, remoteAccess, s3-artifact-storage-agent, sbt-runner-agent, ssh-manager, stacktracesPlugin, svnAgent, swabra, teamcity-agent-terminal-plugin-agent, teamcity-kubernetes-plugin-agent, teamcity-parallel-tests-agent, testNGPlugin, tfs-agent, xcode-runner, xml-report-plugin]
+[2025-11-04 12:16:31,781]   INFO - rver.plugins.PluginManagerImpl - ===========================================================
+[2025-11-04 12:16:31,797]   INFO -    jetbrains.buildServer.AGENT - Build Agent version: 197398, plugins signature: 197398-md5-b0ee9a99cfb90af908a9db75a1b9cace
+[2025-11-04 12:16:31,829]   INFO - ggers.vcs.mercurial.HgDetector - Cannot detect installed mercurial
+[2025-11-04 12:16:31,830]   INFO - dAgentConfigurationInitializer - Loading build agent configuration from /home/kleymkovt/electronic_library/buildAgent/conf/buildAgent.properties
+[2025-11-04 12:16:31,836]   INFO - CacheDirectoryAllowedListAdder - Adding Gradle cache directory /home/kleymkovt/electronic_library/buildAgent/system/jetbrains.gradle.runner into the allowedList null
+[2025-11-04 12:16:31,836]   INFO - KubeAgentConfigurationProvider - TeamCity Server URL was not provided. The instance wasn't started using TeamCity Kube integration.
+[2025-11-04 12:16:40,070]   INFO - n.AmazonInstanceMetadataReader - Amazon is not available. Amazon EC2 integration is not active: Failed to connect to http://169.254.169.254/latest/api/token. Connection refused
+[2025-11-04 12:16:48,092]   INFO - n.AmazonInstanceMetadataReader - Amazon is not available. Amazon EC2 integration is not active: Failed to connect to http://169.254.169.254/latest/2016-04-19. Connection refused
+[2025-11-04 12:16:48,095]   INFO - ildServer.util.EventDispatcher - Event listener took 16s,256ms to complete. Method AgentLifeCycleListener.afterAgentConfigurationLoaded in listener jetbrains.buildServer.clouds.amazon.agent.AmazonProperties$1
+[2025-11-04 12:16:48,102]   INFO - CacheDirectoryAllowedListAdder - Adding .NET cache directory /home/kleymkovt/electronic_library/buildAgent/system/jetbrains.dotnet.runner into the allowedList /home/kleymkovt/electronic_library/buildAgent/system/jetbrains.gradle.runner,/home/kleymkovt/electronic_library/buildAgent/system/jetbrains.maven.runner
+[2025-11-04 12:16:48,124]   INFO -    jetbrains.buildServer.AGENT - Start build agent
+[2025-11-04 12:16:48,154]   INFO -    jetbrains.buildServer.AGENT - Agent Web server started on port 9090
+[2025-11-04 12:16:48,156]   INFO -    jetbrains.buildServer.AGENT - Start probing plugins for the configuration parameters to store
+[2025-11-04 12:16:48,159]   INFO - rver.agent.PropertiesExtension - Start: Fetched agent properties
+[2025-11-04 12:16:48,219]   INFO - rver.agent.PropertiesExtension - Finish: Fetched agent properties (59 ms)
+[2025-11-04 12:16:48,223]   INFO - t.resolver.AgentPythonResolver - Python 3.x executable found at /usr/bin/python3
+[2025-11-04 12:16:48,231]   INFO - r.mono.MonoPropertiesExtension - Mono not found
+[2025-11-04 12:16:48,287]   INFO - .agent.AgentStartupGitDetector - Detected git at /usr/bin/git
+[2025-11-04 12:16:48,363]   INFO - .agent.impl.OsArchBitsDetector - Detecting via "getconf LONG_BIT", exit code: 0, output: 64
+[2025-11-04 12:16:48,364]   INFO - .agent.impl.OsArchBitsDetector - "teamcity.agent.os.arch.bits" detected as "64"
+[2025-11-04 12:16:48,365]   INFO - Server.powershell.agent.DETECT - Detecting PowerShell using RegistryPowerShellDetector
+[2025-11-04 12:16:48,367]   INFO - Server.powershell.agent.DETECT - RegistryPowerShellDetector is only available on Windows
+[2025-11-04 12:16:48,367]   INFO - Server.powershell.agent.DETECT - Detecting PowerShell using CommandLinePowerShellDetector
+[2025-11-04 12:16:48,370]   INFO - Server.powershell.agent.DETECT - No PowerShell detected. If it is installed in non-standard location, please provide install locations in teamcity.powershell.detector.search.paths agent property (with ';' as a separator)
+[2025-11-04 12:16:49,052]   INFO - rains.buildServer.AGENT.DOCKER - Docker client is available: 28.5.1
+[2025-11-04 12:16:49,052]   INFO - rains.buildServer.AGENT.DOCKER - Docker server is available: 28.5.1
+[2025-11-04 12:16:49,053]   INFO - rains.buildServer.AGENT.DOCKER - Docker-compose is available: 2.40.3
+[2025-11-04 12:16:49,053]   INFO - rains.buildServer.AGENT.DOCKER - Failed to locate a running Podman container engine.
+[2025-11-04 12:16:49,067]   INFO - t.resolver.AgentPythonResolver - Python 2.x executable is not found in default directories. Searching for other paths.
+[2025-11-04 12:16:49,225]   INFO - t.resolver.AgentPythonResolver - Python 2.x is not found
+[2025-11-04 12:16:49,334]   INFO - ent.javaDowser.JavaDowserAgent - JavaDowser: Found 1 java installations:
+	17/64/amd64 (17.0.16) at /usr/lib/jvm/java-17-openjdk-amd64 (JDK) [200]
+[2025-11-04 12:16:49,337]   INFO - ialProviderPropertiesExtension - Found .NET credential provider DotNetCredentialProvider4.0.0_Path at /home/kleymkovt/electronic_library/buildAgent/plugins/nuget-agent/bin/credential-plugin/net46/CredentialProvider.TeamCity.exe
+[2025-11-04 12:16:49,340]   INFO - ialProviderPropertiesExtension - Found .NET credential provider DotNetCredentialProvider1.0.0_Path at /home/kleymkovt/electronic_library/buildAgent/plugins/nuget-agent/bin/credential-plugin/netcoreapp1.0/CredentialProvider.TeamCity.dll
+[2025-11-04 12:16:49,340]   INFO - ialProviderPropertiesExtension - Found .NET credential provider DotNetCredentialProvider2.0.0_Path at /home/kleymkovt/electronic_library/buildAgent/plugins/nuget-agent/bin/credential-plugin/netcoreapp2.0/CredentialProvider.TeamCity.dll
+[2025-11-04 12:16:49,341]   INFO - ialProviderPropertiesExtension - Found .NET credential provider DotNetCredentialProvider3.0.0_Path at /home/kleymkovt/electronic_library/buildAgent/plugins/nuget-agent/bin/credential-plugin/netcoreapp3.0/CredentialProvider.TeamCity.dll
+[2025-11-04 12:16:49,341]   INFO - ialProviderPropertiesExtension - Found .NET credential provider DotNetCredentialProvider5.0.0_Path at /home/kleymkovt/electronic_library/buildAgent/plugins/nuget-agent/bin/credential-plugin/net5.0/CredentialProvider.TeamCity.dll
+[2025-11-04 12:16:49,342]   INFO - ialProviderPropertiesExtension - Found .NET credential provider DotNetCredentialProvider6.0.0_Path at /home/kleymkovt/electronic_library/buildAgent/plugins/nuget-agent/bin/credential-plugin/net6.0/CredentialProvider.TeamCity.dll
+[2025-11-04 12:16:49,343]   INFO -    jetbrains.buildServer.AGENT - Stop probing plugins for the configuration parameters to store
+[2025-11-04 12:16:49,348]   INFO - agent.impl.AgentPortFileWriter - Writing agent runtime file to /home/kleymkovt/electronic_library/buildAgent/logs/buildAgent.xmlRpcPort
+[2025-11-04 12:16:49,349]   INFO - agent.impl.AgentPortFileWriter - Launcher version is 2025.07-197398
+[2025-11-04 12:16:49,349]   INFO - agent.impl.AgentPortFileWriter - Writing agent runtime file to /home/kleymkovt/electronic_library/buildAgent/logs/buildAgent.xmlRpcPort :DONE!
+[2025-11-04 12:16:49,349]   INFO - Server.powershell.agent.DETECT - Agent has been initialized from cache, registering powershells from configuration
+[2025-11-04 12:16:49,353]   INFO - nstall.PackagesInstallerRunner - NuGet requires .NET Framework (x86) 4.0 and higher or Mono 3.2 and higher to be installed.
+[2025-11-04 12:16:49,353]   INFO - t.agent.runner.pack.PackRunner - NuGet requires .NET Framework (x86) 4.0 and higher or Mono 3.2 and higher to be installed.
+[2025-11-04 12:16:49,353]   INFO - .publish.PackagesPublishRunner - NuGet requires .NET Framework (x86) 4.0 and higher or Mono 3.2 and higher to be installed.
+[2025-11-04 12:16:49,370]   INFO -    jetbrains.buildServer.AGENT - Build agent started
+[2025-11-04 12:16:49,374]   INFO - buildServer.AGENT.registration - Registering on server via URL "http://localhost:8111": AgentDetails{Name='ubuntu-agent', AgentId=null, BuildId=null, AgentOwnAddress='null', AlternativeAddresses=[], Port=9090, Version='197398', PluginsVersion='197398-md5-b0ee9a99cfb90af908a9db75a1b9cace', AvailableRunners=[Ant, cargo-deploy-runner, csharpScript, DockerCommand, DockerCompose, dotcover, dotnet, dotnet-tools-dupfinder, dotnet-tools-inspectcode, Duplicator, ftp-deploy-runner, gradle-runner, Inspection, jetbrains_powershell, JPS, kotlinScript, Maven2, nodejs-runner, nunit-console, python-runner, Qodana, rake-runner, SBT, simpleRunner, smb-deploy-runner, ssh-deploy-runner, ssh-exec-runner], AvailableVcs=[tfs, jetbrains.git, mercurial, svn, perforce], AuthorizationToken='50d53b832c9574cc9c1085b6d7c3d831', PingCode='WPBj15V21sh3clGROKgwLZOtXIQtrGjD'}
+[2025-11-04 12:16:49,525]   INFO - buildServer.AGENT.registration - Server supports the following communication protocols: [polling]
+[2025-11-04 12:16:49,526]   INFO - buildServer.AGENT.registration - Trying to register on server using 'polling' protocol.
+[2025-11-04 12:16:49,848]   INFO - r.artifacts.impl.HttpDiskCache - Cleaning up items with life time in cache greater than 172800 seconds
+[2025-11-04 12:16:49,851]   INFO - r.artifacts.impl.HttpDiskCache - Finished cleaning up expired items, 0 items removed
+[2025-11-04 12:16:49,864]   INFO - ldServer.AGENT.PollingProtocol - Start polling server for commands
+[2025-11-04 12:16:49,864]   INFO - buildServer.AGENT.registration - Registered on server with id 11 and authorization token '50d53b832c9574cc9c1085b6d7c3d831'
+[2025-11-04 12:16:49,865]   INFO - buildServer.AGENT.registration - If this is the first time this agent registered on the server make sure it is authorized by administrator in the server web UI.
+[2025-11-04 12:16:49,878]   INFO - ldServer.AGENT.PollingProtocol - New command is received from server "testLocal" {id = 2313}
+[2025-11-04 12:16:49,895]   INFO - dDirectoryBasedCleanupRegistry - Removing files from /home/kleymkovt/electronic_library/buildAgent/work/.old
+[2025-11-04 12:16:49,918]   INFO - l.directories.DirectoryMapImpl - Cleaning up old checkout directories. Default lifetime = 192 hour(s)
+[2025-11-04 12:16:49,927]   INFO - dDirectoryBasedCleanupRegistry - Removing files from /home/kleymkovt/electronic_library/buildAgent/temp/.old
+[2025-11-04 12:16:50,408]   WARN - ldServer.AGENT.PollingProtocol - The command "testLocal" {id = 2261} has been already executed, continue polling.
+[2025-11-04 12:16:51,899]   INFO -    jetbrains.buildServer.AGENT - Updating agent parameters on the server: AgentDetails{Name='ubuntu-agent', AgentId=11, BuildId=null, AgentOwnAddress='null', AlternativeAddresses=[], Port=9090, Version='197398', PluginsVersion='197398-md5-b0ee9a99cfb90af908a9db75a1b9cace', AvailableRunners=[Ant, cargo-deploy-runner, csharpScript, DockerCommand, DockerCompose, dotcover, dotnet, dotnet-tools-dupfinder, dotnet-tools-inspectcode, Duplicator, ftp-deploy-runner, gradle-runner, Inspection, jetbrains_powershell, JPS, kotlinScript, Maven2, nodejs-runner, nunit-console, python-runner, Qodana, rake-runner, SBT, simpleRunner, smb-deploy-runner, ssh-deploy-runner, ssh-exec-runner], AvailableVcs=[tfs, jetbrains.git, mercurial, svn, perforce], AuthorizationToken='50d53b832c9574cc9c1085b6d7c3d831', PingCode='WPBj15V21sh3clGROKgwLZOtXIQtrGjD'}

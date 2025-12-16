@@ -75,3 +75,4 @@ CREATE TABLE book_collections (
 	FOREIGN KEY(book_id) REFERENCES books (id) ON DELETE CASCADE, 
 	FOREIGN KEY(collection_id) REFERENCES collections (id) ON DELETE CASCADE
 );
+--change

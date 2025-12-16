@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamcity-agent-plugin
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="urn:schemas-jetbrains-com:teamcity-agent-plugin-v1-xml">
+  <plugin-deployment use-separate-classloader="false">
+            <layout>
+              <executable-files>
+                <include name='bin/ant'/>
+                <include name='bin/antRun'/>
+                <include name='bin/ant.bat'/>
+                <include name='bin/ant.cmd'/>
+                <include name='bin/antenv.cmd'/>
+                <include name='bin/envset.cmd'/>
+                <include name='bin/lcp.bat'/>
+                <include name='bin/runrc.cmd'/>
+                <include name='bin/antRun.pl'/>
+                <include name='bin/complete-ant-cmd.pl'/>
+                <include name='bin/runant.pl'/>
+                <include name='bin/runant.py'/>
+              </executable-files>
+            </layout>
+  </plugin-deployment>
+</teamcity-agent-plugin>

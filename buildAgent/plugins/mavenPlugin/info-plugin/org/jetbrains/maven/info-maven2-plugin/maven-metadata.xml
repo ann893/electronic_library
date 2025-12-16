@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.jetbrains.maven</groupId>
+  <artifactId>info-maven2-plugin</artifactId>
+  <versioning>
+    <release>1.4.8</release>
+    <versions>
+      <version>1.4.8</version>
+    </versions>
+    <lastUpdated>20251006113303</lastUpdated>
+  </versioning>
+</metadata>
