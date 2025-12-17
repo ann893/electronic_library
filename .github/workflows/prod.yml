@@ -1,0 +1,20 @@
+name: DEV DB pipeline
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  check-db:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check DB schema
+        run: |
+          echo "Checking DB schema"
+          ls db || echo "db dir not found"
+
+      - name: Compare TEST and STAGE schemas (mock)
+        run: |
+          echo "Schemas are identical"
