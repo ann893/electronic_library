@@ -76,3 +76,4 @@ CREATE TABLE book_collections (
 	FOREIGN KEY(collection_id) REFERENCES collections (id) ON DELETE CASCADE
 );
 --change
+-- schema change Wed Dec 17 05:33:46 PM UTC 2025
